@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SongBot</title>
+    <link rel="icon" href="images/man_head.webp">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="./chatbot-ui.css">
+</head>
+<body>
+    <div>
+        <h3 class="main-heading">Song Recommendation Chatbot</h3>
+    </div>
+
+    <div>
+        <h2 class="playlist-heading">Recommended Playlists</h2>
+
+        <table>
+            <tr>
+                <td>
+                    <img id="robot-img" src="images/eve.png" alt="robot">
+                </td>
+                <td>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                </td>
+                <td>
+                    <table class="playlist-table">
+                        <tr>
+                            <td>
+                                <a class="container" href="https://open.spotify.com/playlist/37i9dQZF1DXcBWIGoYBM5M?si=8667cf44b9b44310"><img class="playlist-img" src="images/global1.jpg" alt="global"></a>
+                            </td>
+            
+                            <td>
+                                <a class="container" href="https://open.spotify.com/playlist/37i9dQZEVXbLZ52XmnySJg?si=e2f98df41395425f"><img class="playlist-img" src="images/india.jpg" alt="indian"></a>
+                            </td>
+                        </tr>
+            
+                        <tr>
+                            <td>
+                                <a class="container" href="https://open.spotify.com/playlist/1IkxQyL3CyIMRAKhPXRs2r?si=ea60bffad0f7419d"><img class="playlist-img" src="images/korean.jpg" alt="korean"></a>
+                            </td>
+            
+                            <td>
+                                <a class="container" href="https://open.spotify.com/playlist/4kqdLhMjKtxUQHo5cdHxPC?si=b69e60efd97d4f06"><img class="playlist-img" src="images/anime-1.png" alt="japanese"></a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <!-- <td>
+                    <img id="robot-img" src="./images/homepage-bot.png" alt="">
+                </td> -->
+            </tr>
+        </table>
+        
+
+        
+
+    </div>
+
+
+
+    <h3 class="player-heading">Top Hits Music Player</h3>
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DXcBWIGoYBM5M?utm_source=generator" width="50%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+
+
+
+    <div class="footer">
+        <p id="copyright">© 2023 Rohan Jaiswal. All rights reserved.</p>
+    </div>
+
+
+    <!-- <audio src="sounds/epic-story.mp3" controls loop autoplay hidden><p>Your browser doesn't support audio</p></audio> -->
+
+    <!-- Start of ChatBot (www.chatbot.com) code -->
+    <div id="chat-container"></div>
+    <script src="./chatbot-ui.js"></script>
+    <script>
+        createChatBot(host = 'http://localhost:5005/webhooks/rest/webhook', botLogo = "./images/man_head.heic",
+            title = "Song Bot", welcomeMessage = "Hey, i am SongBot", inactiveMsg = "Server is down, Please contact the developer to activate it", theme = "black")
+    </script>
+    <!-- End of ChatBot code -->
+</body>
+</html>
